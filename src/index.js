@@ -3,7 +3,7 @@ const github = require('@actions/github');
 
 
 async function get_labels_for_branch() {
-    const token = core.getInput('github-token', {required: true})
+    const token = core.getInput('github-token')
     const octokit = new github.GitHub(token);
 
     let branch = core.getInput('branch', {required: true})

@@ -7,7 +7,7 @@ you don't need this action and can retrieve the labels from the context of the
 
 ## Parameters
 
-- `repo-token`: This token is used to authenticate with the GitHub API
+- `repo-token` (optional): This token is used to authenticate with the GitHub API
 - `branch`: Branch which is used to identify the pull request for whom the labels 
    should be retrieved
 
