@@ -1,0 +1,19 @@
+
+name: Get Branch Labels
+author: Tobias Wochinger
+description: Get the labels of the given branch on `push` events
+
+inputs:
+  github-token:
+    description: The GitHub token used to create an authenticated client
+    default: ${{ github.token }}
+    required: false
+  branch:
+    description: The branch which should be used to find matching PRs.
+    required: true
+outputs:
+  labels:
+    description: A stringified list of labels for the PR found for this branch.
+runs:
+  using: node12
+  main: src/index.js

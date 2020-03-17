@@ -1,0 +1,23 @@
+{
+  "name": "get-branch-labels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wochinge/get-branch-labels.git"
+  },
+  "author": "Tobias Wochinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wochinge/get-branch-labels/issues"
+  },
+  "homepage": "https://github.com/wochinge/get-branch-labels#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  }
+}
