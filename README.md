@@ -23,7 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: wochinge/get-pull-request-labels
+      id: pull_request_labels
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         branch: "${{ github.ref }}"
+
+    - name: Do something if the label is provided
+      if: contains(steps.pull_request_labels.outputs.labels, '"<your label>"')
+      run: echo "hi"
 ```
